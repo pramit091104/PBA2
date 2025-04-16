@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TechGadget Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar">
+    <span id="welcomeMsg">Welcome to TechGadget Store</span>
+    <a href="login.html" id="loginLink">Login</a>
+    <a href="register.html" id="registerLink">Register</a>
+  </div>
+
+  <!-- Search Bar -->
+  <input type="text" id="searchInput" placeholder="Search gadgets...">
+  <button onclick="searchItems()">Search</button>
+
+  <div id="productList">
+
+    <div class="product" data-name="Smartphone" data-price="500">
+      <img src="img/smtphn.jpg" alt="Smartphone" width="200" height="200">
+      <h3>Smartphone</h3>
+      <p>Latest model with advanced features.</p>
+      <button onclick="addToCart('Smartphone', 500)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-name="Laptop" data-price="1000">
+      <img src="img/laptop.jpg" alt="Laptop" width="200" height="200">
+      <h3>Laptop</h3>
+      <p>Powerful performance for work and play.</p>
+      <button onclick="addToCart('Laptop', 1000)">Add to Cart</button>
+    </div>
+
+ 
+    <div class="product" data-name="Smart Watch" data-price="200">
+      <img src="img/watch.jpg" alt="Watch" width="200" height="200">
+      <h3>watch</h3>
+      <p>Track your fitness and stay connected.</p>
+      <button onclick="addToCart('Smart Watch', 200)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-name="Wireless Headphones" data-price="150">
+      <img src="img/headphones.jpg" alt="Wireless Headphones" width="200" height="200">
+      <h3>Wireless Headphones</h3>
+      <p>Noise-cancelling and comfortable design.</p>
+      <button onclick="addToCart('Wireless Headphones', 150)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-name="Tablet" data-price="300">
+      <img src="img/tablet.jpg" alt="tablet" width="200" height="200">
+      <h3>Pendrive</h3>
+      <p>Portable and powerful for all your needs.</p>
+      <button onclick="addToCart('Tablet', 300)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-name="Digital Camera" data-price="400">
+      <img src="img/cam.jpg" alt="Harddisk" width="200" height="200">
+      <h3>Harddisk</h3>
+      <p>Store your memories.</p>
+      <button onclick="addToCart('Digital Camera', 400)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h3>Shopping Cart:</h3>
+  <ul id="cartList"></ul>
+
+  <div id="cartSummary">
+    <p>Total Items: <span id="totalItems">0</span></p>
+    <p>Total Price: <span id="totalPrice">0.00</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
